@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <!-- Stylesheets -->
+  <link href="styleProject.css" rel="stylesheet">
+  <title>Al-Saa'a Medical Complex</title>
+
+</head>
+<body>
+  
+<!--Header -->
+
+<img class="logo" src="logo.png" height="50" width="120"  >
+
+<!-- Add font awesome icons -->
+
+<a href="#" class="fa fa-phone " style="color:#ffffff"></a>
+<span> 
+  <strong>Call Now</strong>
+             (+(972)-12 -4567) </span>
+<i class="fa fa-envelope" aria-hidden="true" style="color:#ffffff"></i>
+
+ <strong>Mail</strong>
+             (Al-Saa_Medical.gmail) </span>
+ <a href="appointment.html" class="btn-style-one">Appoinment</a>
+          
+  
+  <ul>
+   <li><a href="Contact.html">Contact</a></li>
+    <li><a href="appointment.html">Location</a></li> 
+     <li><a href="appointment.html">Clinics</a></li>
+     <li><a href="appointment.html">About Us</a></li>
+     <li><a href="Home.html">Home</a></li>
+     
+  
+  </ul>
+<!--End Header -->
+<!--Slider Image -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <div class="slider">
+        <img class="slider-image" src="slider-bg-3.jpg" style="width:100%">
+         <div class="textCaption">
+            <h2  data-animation-in="slideInRight">Best Medical Care For Yourself <br>and Your Family</h2>
+            <p  data-animation-in="slideInRight">The best medical complex in the Gaza Strip.<br> It provides high-level medical services in one place</p>
+           <a href="about.html" class="btn" data-animation-in="slideInRight"  data-duration-in="1.2">About Us</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img class="slider-image" src="slider-bg-1.jpg" style="width:100%">
+        <div class="textCaptionn">
+            <h2  data-animation-in="slideInRight">We Care about Your Health</h2>
+            <p  data-animation-in="slideInRight">contains a large number of specialized clinics <br> that provide services for all family members in one place</p>
+            <a href="about.html" class="btn" data-animation-in="slideInRight"  data-duration-in="1.2">About Us</a>
+          </div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+<!--End Slider Image -->
+<!--Footer -->
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <img class="logo-footer" src="logo2.png" height="100" width="240"  >
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Clinics</a>
+          <a href="#">Contact</a>
+          <a href="#">Location</a>
+        </p>
+
+        <p class="footer-company-name">Al-Saa'a Medical Complex © 2023</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Al-Nusirat Camp</span> Nuseirat - Market - Al-Saa`a Tower</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>(+(972)-12 -4567)</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com"> (Al-Saa_Medical.gmail)</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About Al-Saa'a Medical Complex</span>
+          Best Medical Care For Yourself and Your Family
+          Which facilitates easy access to most of the residentsof the Gaza Strip The complex contains a large number of specialized clinics that provide services for all family members in one place
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          
+        </div>
+
+      </div>
+
+    </footer>
+ <!--End Footer -->
+</body>
+</html>
